@@ -2,6 +2,10 @@ package gmu.edu;
 
 import java.io.Serializable;
 
+import javax.persistence.*;
+
+
+@Entity
 public class SurveyData implements Serializable{
 
 	
@@ -9,10 +13,14 @@ public class SurveyData implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@GeneratedValue
+	private int responseid;
 
 	private String firstname;
 	
-	private String lastName;
+	private String lastname;
 	
 	private String streetAddress;
 	
@@ -47,11 +55,11 @@ public class SurveyData implements Serializable{
 	}
 
 	public String getLastName() {
-		return lastName;
+		return lastname;
 	}
 
 	public void setLastName(String lastName) {
-		this.lastName = lastName;
+		this.lastname = lastName;
 	}
 
 	public String getStreetAddress() {
@@ -152,7 +160,7 @@ public class SurveyData implements Serializable{
 
 	@Override
 	public String toString() {
-		return "SurveyData [firstname=" + firstname + ", lastName=" + lastName + ", streetAddress=" + streetAddress
+		return "SurveyData [firstname=" + firstname + ", lastName=" + lastname + ", streetAddress=" + streetAddress
 				+ ", city=" + city + ", state=" + state + ", zipcode=" + zipcode + ", phone=" + phone + ", email="
 				+ email + ", date=" + date + ", favorite=" + favorite + ", interest=" + interest + ", recommendation="
 				+ recommendation + ", raffle=" + raffle + ", comments=" + comments + "]";

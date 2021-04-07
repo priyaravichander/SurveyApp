@@ -1,0 +1,1 @@
+create table surveydb.survey_test(name varchar(10));

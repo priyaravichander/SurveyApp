@@ -1,3 +1,8 @@
+/**
+ *  Team: Madeline, Vandana, Dhruv, Priya
+Jersey servlet. Contains methods for get and post request
+ 
+ */
 package gmu.edu;
 
 import java.util.ArrayList;

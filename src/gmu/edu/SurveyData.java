@@ -1,3 +1,9 @@
+/**
+ *  Team: Madeline, Vandana, Dhruv, Priya
+POJO for data mapping. Maps data members to columns in the DB
+ 
+ */
+
 package gmu.edu;
 
 import java.io.Serializable;
